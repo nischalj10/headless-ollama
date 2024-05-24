@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "predev": "node -e \"console.log(process.platform === 'win32' ? 'Running on Windows' : 'Running on Unix-like OS'); require('child_process').execSync(process.platform === 'win32' ? 'powershell -ExecutionPolicy RemoteSigned -File preload.ps1' : 'chmod +x preload.sh && ./preload.sh', {stdio: 'inherit'});\""
+  },
+  "author": "nischalj10",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "ollama": "^0.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
