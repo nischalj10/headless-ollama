@@ -19,3 +19,7 @@ npm run dev
 ```
 
 it will automatically install ollama client and run the `llava:v1.6` model.
+
+# llama.cpp support
+
+it has come to my notice that adding llama.cpp support would be great (in some cases better than ollama from packaging pov). i would be picking this up soon as i get some free time. see [issue](https://github.com/ggerganov/llama.cpp)
